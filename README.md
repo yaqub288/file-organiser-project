@@ -24,6 +24,36 @@ Or, if you use `uv`:
 uv run file-organiser-project
 ```
 
+## Share it with other people
+
+The easiest way to share the app is as a standalone executable. The recipient
+does not need Python, `uv`, or Tkinter installed.
+
+Build it locally on the operating system you want to share:
+
+```bash
+python -m pip install pyinstaller
+python build.py
+```
+
+The finished app is placed in `dist/`:
+
+- Windows: `FileOrganiser.exe`
+- macOS/Linux: `FileOrganiser`
+
+PyInstaller builds are operating-system specific. Build on Windows for Windows
+users, on macOS for Mac users, and on Linux for Linux users. Do not send the
+Windows executable to a Mac or Linux user.
+
+This repository also includes a GitHub Actions workflow. Run **Actions →
+Build desktop apps → Run workflow** on GitHub, then download the Windows,
+macOS, or Linux artifact from the completed workflow. Creating a tag such as
+`v1.0.0` runs the same build automatically.
+
+For macOS, the downloaded executable may need to be allowed in **System
+Settings → Privacy & Security** the first time it is opened. On Linux, make
+the file executable with `chmod +x FileOrganiser`.
+
 ## Safety features
 
 - Only files directly inside the selected folder are considered.
