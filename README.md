@@ -3,6 +3,19 @@
 A small desktop app that sorts the files in a folder into category folders such as
 `Documents`, `Pictures`, `Audio`, `Video`, `Archives`, `Code`, and `Other`.
 
+## Download
+
+**[Download the latest version](https://github.com/yaqub288/file-organiser-project/releases/latest)**
+
+On the releases page, open the newest release and download:
+
+- **Windows:** `FileOrganiser-Windows.exe`
+- **macOS:** `FileOrganiser-macOS`
+- **Linux:** `FileOrganiser-Linux`
+
+No Python installation is needed. Download the file for your operating system,
+then open it. On Linux, run `chmod +x FileOrganiser-Linux` once before opening it.
+
 ## Run it
 
 Python 3.12+ and Tkinter are required. Tkinter is included with most Python
