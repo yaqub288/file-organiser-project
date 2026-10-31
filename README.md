@@ -39,8 +39,6 @@ then open it. On Linux, run `chmod +x FileOrganiser-Linux` once before opening i
    ```
 
 The downloaded Linux file is portable, so Python and Tkinter are not required.
-If you instead run the source code, use `python3 main.py` (not `python main.py`
-on Ubuntu installations where the `python` command is not configured).
 
 To keep the app in a personal applications folder:
 
@@ -57,58 +55,6 @@ On Windows, download `FileOrganiser-Windows.exe` and double-click it. On macOS,
 download `FileOrganiser-macOS`, move it somewhere convenient, and open it. macOS
 may require allowing it under **System Settings → Privacy & Security** the first
 time.
-
-## Run from source
-
-Python 3.12+ and Tkinter are required. Tkinter is included with most Python
-installations. On Ubuntu/Debian, install it with:
-
-```bash
-sudo apt install python3-tk
-```
-
-From the project directory:
-
-```bash
-python3 main.py
-```
-
-Or, if you use `uv`:
-
-```bash
-uv run file-organiser-project
-```
-
-## Share it with other people
-
-The easiest way to share the app is as a standalone executable. The recipient
-does not need Python, `uv`, or Tkinter installed.
-
-Build it locally on the operating system you want to share:
-
-```bash
-python -m pip install pyinstaller
-python build.py
-```
-
-The finished app is placed in `dist/`:
-
-- Windows: `FileOrganiser.exe`
-- macOS/Linux: `FileOrganiser`
-
-PyInstaller builds are operating-system specific. Build on Windows for Windows
-users, on macOS for Mac users, and on Linux for Linux users. Do not send the
-Windows executable to a Mac or Linux user.
-
-This repository also includes a GitHub Actions workflow. Run **Actions →
-Build desktop apps → Run workflow** on GitHub, then download the Windows,
-macOS, or Linux artifact from the completed workflow. Creating a tag such as
-`v1.0.0` runs the same build automatically.
-
-For the simplest public download experience, use the **Releases** section on
-GitHub. Each version release contains ready-to-run files for all three
-operating systems. Users download the file for their computer and do not need
-Python or access to the source code.
 
 ## Safety features
 
