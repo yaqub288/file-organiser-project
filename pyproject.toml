@@ -1,23 +1,16 @@
 [project]
 name = "file-organiser-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple desktop GUI for safely organising files into categories."
 readme = "README.md"
 authors = [
     { name = "Yaqub Ahmed", email = "yaqub1a@proton.me" }
 ]
 requires-python = ">=3.12"
-dependencies = [
-    "ipykernel>=7.4.0",
-    "numpy>=2.5.4",
-    "pandas>=3.0.6",
-    "path>=17.1.1",
-    "python-dotenv>=1.2.4",
-    "requests>=2.34.2",
-]
+dependencies = []
 
 [project.scripts]
-file-organiser-project = "file_organiser_project:main"
+file-organiser-project = "main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.1,<0.14.0"]
