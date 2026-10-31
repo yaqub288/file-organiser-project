@@ -57,7 +57,6 @@ class FileOrganiserApp(tk.Tk):
         self.title("File Organiser")
         self.geometry("780x540")
         self.minsize(650, 420)
-        self.option_add("*Font", "Segoe UI 10")
 
         self.folder = tk.StringVar()
         self.status = tk.StringVar(value="Choose a folder to get started.")
@@ -70,7 +69,7 @@ class FileOrganiserApp(tk.Tk):
         style = ttk.Style(self)
         if "clam" in style.theme_names():
             style.theme_use("clam")
-        style.configure("Title.TLabel", font=("Segoe UI", 20, "bold"))
+        style.configure("Title.TLabel", font=("TkDefaultFont", 20, "bold"))
         style.configure("Subtitle.TLabel", foreground="#5f6368")
         style.configure("Action.TButton", padding=(14, 8))
 

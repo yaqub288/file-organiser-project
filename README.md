@@ -16,7 +16,49 @@ On the releases page, open the newest release and download:
 No Python installation is needed. Download the file for your operating system,
 then open it. On Linux, run `chmod +x FileOrganiser-Linux` once before opening it.
 
-## Run it
+### Linux installation
+
+1. Download `FileOrganiser-Linux` from the **Assets** section of the latest
+   release.
+2. Open Terminal and go to your Downloads folder:
+
+   ```bash
+   cd ~/Downloads
+   ```
+
+3. Allow the app to run:
+
+   ```bash
+   chmod +x FileOrganiser-Linux
+   ```
+
+4. Start it:
+
+   ```bash
+   ./FileOrganiser-Linux
+   ```
+
+The downloaded Linux file is portable, so Python and Tkinter are not required.
+If you instead run the source code, use `python3 main.py` (not `python main.py`
+on Ubuntu installations where the `python` command is not configured).
+
+To keep the app in a personal applications folder:
+
+```bash
+mkdir -p ~/.local/bin
+mv ~/Downloads/FileOrganiser-Linux ~/.local/bin/file-organiser
+chmod +x ~/.local/bin/file-organiser
+~/.local/bin/file-organiser
+```
+
+### Windows and macOS installation
+
+On Windows, download `FileOrganiser-Windows.exe` and double-click it. On macOS,
+download `FileOrganiser-macOS`, move it somewhere convenient, and open it. macOS
+may require allowing it under **System Settings → Privacy & Security** the first
+time.
+
+## Run from source
 
 Python 3.12+ and Tkinter are required. Tkinter is included with most Python
 installations. On Ubuntu/Debian, install it with:
@@ -28,7 +70,7 @@ sudo apt install python3-tk
 From the project directory:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 Or, if you use `uv`:
@@ -67,10 +109,6 @@ For the simplest public download experience, use the **Releases** section on
 GitHub. Each version release contains ready-to-run files for all three
 operating systems. Users download the file for their computer and do not need
 Python or access to the source code.
-
-For macOS, the downloaded executable may need to be allowed in **System
-Settings → Privacy & Security** the first time it is opened. On Linux, make
-the file executable with `chmod +x FileOrganiser`.
 
 ## Safety features
 
