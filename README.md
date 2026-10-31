@@ -37,17 +37,6 @@ Or, if you use `uv`:
 uv run file-organiser-project
 ```
 
-## Share it with other people
-
-The easiest way to share the app is as a standalone executable. The recipient
-does not need Python, `uv`, or Tkinter installed.
-
-Build it locally on the operating system you want to share:
-
-```bash
-python -m pip install pyinstaller
-python build.py
-```
 
 The finished app is placed in `dist/`:
 
