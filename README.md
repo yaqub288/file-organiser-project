@@ -50,6 +50,11 @@ Build desktop apps → Run workflow** on GitHub, then download the Windows,
 macOS, or Linux artifact from the completed workflow. Creating a tag such as
 `v1.0.0` runs the same build automatically.
 
+For the simplest public download experience, use the **Releases** section on
+GitHub. Each version release contains ready-to-run files for all three
+operating systems. Users download the file for their computer and do not need
+Python or access to the source code.
+
 For macOS, the downloaded executable may need to be allowed in **System
 Settings → Privacy & Security** the first time it is opened. On Linux, make
 the file executable with `chmod +x FileOrganiser`.
